@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5B8DEF"/>
+      <stop offset="50%" stop-color="#A26BFA"/>
+      <stop offset="100%" stop-color="#3DDDFC"/>
+    </linearGradient>
+    <radialGradient id="bgGlowA" cx="20%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#5B8DEF" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#5B8DEF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bgGlowB" cx="80%" cy="70%" r="55%">
+      <stop offset="0%" stop-color="#A26BFA" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#A26BFA" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="chartPanel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1A2150" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#1A2150" stop-opacity="0.18"/>
+    </linearGradient>
+    <linearGradient id="glassEdge" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Dual-axis line chart on a glass panel. Data series are illustrative placeholders;
+       the Executor rewrites path coordinates against the project's real data. -->
+  <g id="bg">
+    <rect width="1280" height="720" fill="#0A0E27"/>
+    <rect width="1280" height="720" fill="url(#bgGlowA)"/>
+    <rect width="1280" height="720" fill="url(#bgGlowB)"/>
+  </g>
+
+  <g id="header">
+    <rect x="60" y="50" width="6" height="32" rx="3" fill="url(#titleGradient)"/>
+    <text x="80" y="76" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="34" font-weight="900" fill="#E8ECFF">{{PAGE_TITLE}}</text>
+    <text x="80" y="108" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="14" font-weight="600" fill="#A8B0D0" letter-spacing="3">{{EYEBROW}}</text>
+  </g>
+
+  <g id="chart-panel-bg">
+    <rect x="100" y="135" width="1100" height="475" rx="20" fill="url(#chartPanel)" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1"/>
+    <rect x="118" y="136" width="1064" height="1" fill="url(#glassEdge)"/>
+  </g>
+
+  <g id="chartArea">
+    <line x1="140" y1="560" x2="1180" y2="560" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="1"/>
+    <line x1="140" y1="462" x2="1180" y2="462" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1" stroke-dasharray="3 5"/>
+    <line x1="140" y1="365" x2="1180" y2="365" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1" stroke-dasharray="3 5"/>
+    <line x1="140" y1="267" x2="1180" y2="267" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1" stroke-dasharray="3 5"/>
+    <line x1="140" y1="170" x2="1180" y2="170" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1" stroke-dasharray="3 5"/>
+    <line x1="140" y1="170" x2="140" y2="560" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="1"/>
+    <line x1="1180" y1="170" x2="1180" y2="560" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="1"/>
+
+    <text x="128" y="565" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="12" font-weight="600" fill="#A8B0D0" text-anchor="end">{{YLEFT_1}}</text>
+    <text x="128" y="467" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="12" font-weight="600" fill="#A8B0D0" text-anchor="end">{{YLEFT_2}}</text>
+    <text x="128" y="370" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="12" font-weight="600" fill="#A8B0D0" text-anchor="end">{{YLEFT_3}}</text>
+    <text x="128" y="272" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="12" font-weight="600" fill="#A8B0D0" text-anchor="end">{{YLEFT_4}}</text>
+    <text x="128" y="175" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="12" font-weight="600" fill="#A8B0D0" text-anchor="end">{{YLEFT_5}}</text>
+
+    <text x="1192" y="565" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="12" font-weight="600" fill="#A8B0D0">{{YRIGHT_1}}</text>
+    <text x="1192" y="467" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="12" font-weight="600" fill="#A8B0D0">{{YRIGHT_2}}</text>
+    <text x="1192" y="370" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="12" font-weight="600" fill="#A8B0D0">{{YRIGHT_3}}</text>
+    <text x="1192" y="272" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="12" font-weight="600" fill="#A8B0D0">{{YRIGHT_4}}</text>
+    <text x="1192" y="175" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="12" font-weight="600" fill="#A8B0D0">{{YRIGHT_5}}</text>
+
+    <text x="140" y="588" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="12" font-weight="600" fill="#A8B0D0" text-anchor="middle">{{XLABEL_1}}</text>
+    <text x="343" y="588" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="12" font-weight="600" fill="#A8B0D0" text-anchor="middle">{{XLABEL_2}}</text>
+    <text x="541" y="588" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="12" font-weight="600" fill="#A8B0D0" text-anchor="middle">{{XLABEL_3}}</text>
+    <text x="739" y="588" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="12" font-weight="600" fill="#A8B0D0" text-anchor="middle">{{XLABEL_4}}</text>
+    <text x="937" y="588" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="12" font-weight="600" fill="#A8B0D0" text-anchor="middle">{{XLABEL_5}}</text>
+    <text x="1135" y="588" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="12" font-weight="600" fill="#A8B0D0" text-anchor="middle">{{XLABEL_6}}</text>
+
+    <line x1="343" y1="170" x2="343" y2="560" stroke="#3DDDFC" stroke-opacity="0.32" stroke-width="1" stroke-dasharray="4 6"/>
+    <line x1="739" y1="170" x2="739" y2="560" stroke="#3DDDFC" stroke-opacity="0.32" stroke-width="1" stroke-dasharray="4 6"/>
+    <line x1="1135" y1="170" x2="1135" y2="560" stroke="#3DDDFC" stroke-opacity="0.32" stroke-width="1" stroke-dasharray="4 6"/>
+
+    <!-- chart-plot-area: 140,170,1180,560 -->
+
+    <polyline points="140,453 343,365 541,316 739,277 937,267 1135,244" fill="none" stroke="#4ADE80" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="seriesA-dots">
+      <circle cx="140" cy="453" r="5" fill="#4ADE80" stroke="#0A0E27" stroke-width="2"/>
+      <circle cx="343" cy="365" r="6" fill="#4ADE80" stroke="#0A0E27" stroke-width="2"/>
+      <circle cx="541" cy="316" r="5" fill="#4ADE80" stroke="#0A0E27" stroke-width="2"/>
+      <circle cx="739" cy="277" r="6" fill="#4ADE80" stroke="#0A0E27" stroke-width="2"/>
+      <circle cx="937" cy="267" r="5" fill="#4ADE80" stroke="#0A0E27" stroke-width="2"/>
+      <circle cx="1135" cy="244" r="7" fill="#4ADE80" stroke="#0A0E27" stroke-width="2"/>
+    </g>
+
+    <polyline points="140,226 343,295 541,323 739,379 937,407 1135,443" fill="none" stroke="#FB7185" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="seriesB-dots">
+      <circle cx="140" cy="226" r="5" fill="#FB7185" stroke="#0A0E27" stroke-width="2"/>
+      <circle cx="343" cy="295" r="5" fill="#FB7185" stroke="#0A0E27" stroke-width="2"/>
+      <circle cx="541" cy="323" r="5" fill="#FB7185" stroke="#0A0E27" stroke-width="2"/>
+      <circle cx="739" cy="379" r="5" fill="#FB7185" stroke="#0A0E27" stroke-width="2"/>
+      <circle cx="937" cy="407" r="5" fill="#FB7185" stroke="#0A0E27" stroke-width="2"/>
+      <circle cx="1135" cy="443" r="7" fill="#FB7185" stroke="#0A0E27" stroke-width="2"/>
+    </g>
+
+    <g id="annot-1">
+      <rect x="270" y="148" width="146" height="22" rx="11" fill="#1A2150" fill-opacity="0.85" stroke="#3DDDFC" stroke-opacity="0.5" stroke-width="1"/>
+      <text x="343" y="164" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="12" font-weight="700" fill="#3DDDFC" text-anchor="middle">{{ANNOT_1}}</text>
+    </g>
+    <g id="annot-2">
+      <rect x="666" y="148" width="146" height="22" rx="11" fill="#1A2150" fill-opacity="0.85" stroke="#3DDDFC" stroke-opacity="0.5" stroke-width="1"/>
+      <text x="739" y="164" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="12" font-weight="700" fill="#3DDDFC" text-anchor="middle">{{ANNOT_2}}</text>
+    </g>
+    <g id="annot-3">
+      <rect x="1062" y="148" width="146" height="22" rx="11" fill="#1A2150" fill-opacity="0.85" stroke="#3DDDFC" stroke-opacity="0.5" stroke-width="1"/>
+      <text x="1135" y="164" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="12" font-weight="700" fill="#3DDDFC" text-anchor="middle">{{ANNOT_3}}</text>
+    </g>
+  </g>
+
+  <g id="legend">
+    <rect x="100" y="630" width="280" height="44" rx="10" fill="#1A2150" fill-opacity="0.65" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="1"/>
+    <line x1="120" y1="652" x2="148" y2="652" stroke="#4ADE80" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="134" cy="652" r="5" fill="#4ADE80" stroke="#0A0E27" stroke-width="2"/>
+    <text x="162" y="657" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="14" font-weight="700" fill="#E8ECFF">{{LEGEND_A}}</text>
+    <rect x="395" y="630" width="280" height="44" rx="10" fill="#1A2150" fill-opacity="0.65" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="1"/>
+    <line x1="415" y1="652" x2="443" y2="652" stroke="#FB7185" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="429" cy="652" r="5" fill="#FB7185" stroke="#0A0E27" stroke-width="2"/>
+    <text x="457" y="657" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="14" font-weight="700" fill="#E8ECFF">{{LEGEND_B}}</text>
+    <rect x="690" y="630" width="510" height="44" rx="10" fill="#1A2150" fill-opacity="0.65" stroke="#3DDDFC" stroke-opacity="0.4" stroke-width="1"/>
+    <text x="710" y="657" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="14" font-weight="600" fill="#A8B0D0">{{SUMMARY}}</text>
+  </g>
+
+  <g id="footer">
+    <text x="60" y="700" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="13" font-weight="600" fill="#6B7299">{{SECTION_NAME}}</text>
+    <text x="1220" y="700" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="13" font-weight="600" fill="#6B7299" text-anchor="end">{{PAGE_NUM}}</text>
+  </g>
+</svg>

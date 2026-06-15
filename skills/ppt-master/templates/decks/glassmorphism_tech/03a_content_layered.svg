@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5B8DEF"/>
+      <stop offset="50%" stop-color="#A26BFA"/>
+      <stop offset="100%" stop-color="#3DDDFC"/>
+    </linearGradient>
+    <radialGradient id="bgGlowA" cx="18%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#5B8DEF" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#5B8DEF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bgGlowB" cx="82%" cy="70%" r="55%">
+      <stop offset="0%" stop-color="#3DDDFC" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#3DDDFC" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="moduleGlass" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1A2150" stop-opacity="0.78"/>
+      <stop offset="100%" stop-color="#1A2150" stop-opacity="0.45"/>
+    </linearGradient>
+    <linearGradient id="badgeBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5B8DEF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#5B8DEF" stop-opacity="0.18"/>
+    </linearGradient>
+    <linearGradient id="badgePurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A26BFA" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#A26BFA" stop-opacity="0.18"/>
+    </linearGradient>
+    <linearGradient id="badgeCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3DDDFC" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#3DDDFC" stop-opacity="0.18"/>
+    </linearGradient>
+    <linearGradient id="badgeGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4ADE80" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#4ADE80" stop-opacity="0.18"/>
+    </linearGradient>
+    <linearGradient id="glassEdge" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Layered architecture: 4 rows × (1 badge + 3 module cards). For AI backdrop add <image> in <g id="bg">. -->
+  <g id="bg">
+    <rect width="1280" height="720" fill="#0A0E27"/>
+    <rect width="1280" height="720" fill="url(#bgGlowA)"/>
+    <rect width="1280" height="720" fill="url(#bgGlowB)"/>
+  </g>
+
+  <g id="header">
+    <rect x="60" y="50" width="6" height="32" rx="3" fill="url(#titleGradient)"/>
+    <text x="80" y="76" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="34" font-weight="900" fill="#E8ECFF">{{PAGE_TITLE}}</text>
+    <text x="80" y="108" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="14" font-weight="600" fill="#A8B0D0" letter-spacing="3">{{EYEBROW}}</text>
+  </g>
+
+  <g id="layer-1">
+    <rect x="60" y="140" width="170" height="120" rx="14" fill="url(#badgeBlue)" stroke="#5B8DEF" stroke-opacity="0.55" stroke-width="1"/>
+    <use data-icon="phosphor-duotone/eye" x="80" y="158" width="40" height="40" fill="#3DDDFC"/>
+    <text x="80" y="220" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="13" font-weight="700" fill="#3DDDFC" letter-spacing="2">{{LAYER_1_TAG}}</text>
+    <text x="80" y="246" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="22" font-weight="900" fill="#E8ECFF">{{LAYER_1_TITLE}}</text>
+    <g id="mod-1-1">
+      <rect x="246" y="140" width="320" height="120" rx="14" fill="url(#moduleGlass)" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="1"/>
+      <rect x="264" y="141" width="284" height="1" fill="url(#glassEdge)"/>
+      <text x="266" y="178" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="18" font-weight="800" fill="#E8ECFF">{{MOD_1_1_TITLE}}</text>
+      <text x="266" y="206" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="14" font-weight="400" fill="#A8B0D0">{{MOD_1_1_DESC_1}}</text>
+      <text x="266" y="228" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="14" font-weight="400" fill="#A8B0D0">{{MOD_1_1_DESC_2}}</text>
+    </g>
+    <g id="mod-1-2">
+      <rect x="578" y="140" width="320" height="120" rx="14" fill="url(#moduleGlass)" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="1"/>
+      <rect x="596" y="141" width="284" height="1" fill="url(#glassEdge)"/>
+      <text x="598" y="178" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="18" font-weight="800" fill="#E8ECFF">{{MOD_1_2_TITLE}}</text>
+      <text x="598" y="206" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="14" font-weight="400" fill="#A8B0D0">{{MOD_1_2_DESC_1}}</text>
+      <text x="598" y="228" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="14" font-weight="400" fill="#A8B0D0">{{MOD_1_2_DESC_2}}</text>
+    </g>
+    <g id="mod-1-3">
+      <rect x="910" y="140" width="310" height="120" rx="14" fill="url(#moduleGlass)" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="1"/>
+      <rect x="928" y="141" width="274" height="1" fill="url(#glassEdge)"/>
+      <text x="930" y="178" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="18" font-weight="800" fill="#E8ECFF">{{MOD_1_3_TITLE}}</text>
+      <text x="930" y="206" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="14" font-weight="400" fill="#A8B0D0">{{MOD_1_3_DESC_1}}</text>
+      <text x="930" y="228" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="14" font-weight="400" fill="#A8B0D0">{{MOD_1_3_DESC_2}}</text>
+    </g>
+  </g>
+
+  <g id="layer-2">
+    <rect x="60" y="272" width="170" height="120" rx="14" fill="url(#badgePurple)" stroke="#A26BFA" stroke-opacity="0.55" stroke-width="1"/>
+    <use data-icon="phosphor-duotone/brain" x="80" y="290" width="40" height="40" fill="#A26BFA"/>
+    <text x="80" y="352" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="13" font-weight="700" fill="#A26BFA" letter-spacing="2">{{LAYER_2_TAG}}</text>
+    <text x="80" y="378" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="22" font-weight="900" fill="#E8ECFF">{{LAYER_2_TITLE}}</text>
+    <g id="mod-2-1">
+      <rect x="246" y="272" width="320" height="120" rx="14" fill="url(#moduleGlass)" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="1"/>
+      <rect x="264" y="273" width="284" height="1" fill="url(#glassEdge)"/>
+      <text x="266" y="310" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="18" font-weight="800" fill="#E8ECFF">{{MOD_2_1_TITLE}}</text>
+      <text x="266" y="338" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="14" font-weight="400" fill="#A8B0D0">{{MOD_2_1_DESC_1}}</text>
+      <text x="266" y="360" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="14" font-weight="400" fill="#A8B0D0">{{MOD_2_1_DESC_2}}</text>
+    </g>
+    <g id="mod-2-2">
+      <rect x="578" y="272" width="320" height="120" rx="14" fill="url(#moduleGlass)" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="1"/>
+      <rect x="596" y="273" width="284" height="1" fill="url(#glassEdge)"/>
+      <text x="598" y="310" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="18" font-weight="800" fill="#E8ECFF">{{MOD_2_2_TITLE}}</text>
+      <text x="598" y="338" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="14" font-weight="400" fill="#A8B0D0">{{MOD_2_2_DESC_1}}</text>
+      <text x="598" y="360" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="14" font-weight="400" fill="#A8B0D0">{{MOD_2_2_DESC_2}}</text>
+    </g>
+    <g id="mod-2-3">
+      <rect x="910" y="272" width="310" height="120" rx="14" fill="url(#moduleGlass)" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="1"/>
+      <rect x="928" y="273" width="274" height="1" fill="url(#glassEdge)"/>
+      <text x="930" y="310" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="18" font-weight="800" fill="#E8ECFF">{{MOD_2_3_TITLE}}</text>
+      <text x="930" y="338" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="14" font-weight="400" fill="#A8B0D0">{{MOD_2_3_DESC_1}}</text>
+      <text x="930" y="360" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="14" font-weight="400" fill="#A8B0D0">{{MOD_2_3_DESC_2}}</text>
+    </g>
+  </g>
+
+  <g id="layer-3">
+    <rect x="60" y="404" width="170" height="120" rx="14" fill="url(#badgeCyan)" stroke="#3DDDFC" stroke-opacity="0.55" stroke-width="1"/>
+    <use data-icon="phosphor-duotone/lightning" x="80" y="422" width="40" height="40" fill="#3DDDFC"/>
+    <text x="80" y="484" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="13" font-weight="700" fill="#3DDDFC" letter-spacing="2">{{LAYER_3_TAG}}</text>
+    <text x="80" y="510" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="22" font-weight="900" fill="#E8ECFF">{{LAYER_3_TITLE}}</text>
+    <g id="mod-3-1">
+      <rect x="246" y="404" width="320" height="120" rx="14" fill="url(#moduleGlass)" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="1"/>
+      <rect x="264" y="405" width="284" height="1" fill="url(#glassEdge)"/>
+      <text x="266" y="442" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="18" font-weight="800" fill="#E8ECFF">{{MOD_3_1_TITLE}}</text>
+      <text x="266" y="470" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="14" font-weight="400" fill="#A8B0D0">{{MOD_3_1_DESC_1}}</text>
+      <text x="266" y="492" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="14" font-weight="400" fill="#A8B0D0">{{MOD_3_1_DESC_2}}</text>
+    </g>
+    <g id="mod-3-2">
+      <rect x="578" y="404" width="320" height="120" rx="14" fill="url(#moduleGlass)" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="1"/>
+      <rect x="596" y="405" width="284" height="1" fill="url(#glassEdge)"/>
+      <text x="598" y="442" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="18" font-weight="800" fill="#E8ECFF">{{MOD_3_2_TITLE}}</text>
+      <text x="598" y="470" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="14" font-weight="400" fill="#A8B0D0">{{MOD_3_2_DESC_1}}</text>
+      <text x="598" y="492" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="14" font-weight="400" fill="#A8B0D0">{{MOD_3_2_DESC_2}}</text>
+    </g>
+    <g id="mod-3-3">
+      <rect x="910" y="404" width="310" height="120" rx="14" fill="url(#moduleGlass)" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="1"/>
+      <rect x="928" y="405" width="274" height="1" fill="url(#glassEdge)"/>
+      <text x="930" y="442" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="18" font-weight="800" fill="#E8ECFF">{{MOD_3_3_TITLE}}</text>
+      <text x="930" y="470" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="14" font-weight="400" fill="#A8B0D0">{{MOD_3_3_DESC_1}}</text>
+      <text x="930" y="492" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="14" font-weight="400" fill="#A8B0D0">{{MOD_3_3_DESC_2}}</text>
+    </g>
+  </g>
+
+  <g id="layer-4">
+    <rect x="60" y="536" width="170" height="120" rx="14" fill="url(#badgeGreen)" stroke="#4ADE80" stroke-opacity="0.5" stroke-width="1"/>
+    <use data-icon="phosphor-duotone/database" x="80" y="554" width="40" height="40" fill="#4ADE80"/>
+    <text x="80" y="616" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="13" font-weight="700" fill="#4ADE80" letter-spacing="2">{{LAYER_4_TAG}}</text>
+    <text x="80" y="642" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="22" font-weight="900" fill="#E8ECFF">{{LAYER_4_TITLE}}</text>
+    <g id="mod-4-1">
+      <rect x="246" y="536" width="320" height="120" rx="14" fill="url(#moduleGlass)" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="1"/>
+      <rect x="264" y="537" width="284" height="1" fill="url(#glassEdge)"/>
+      <text x="266" y="574" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="18" font-weight="800" fill="#E8ECFF">{{MOD_4_1_TITLE}}</text>
+      <text x="266" y="602" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="14" font-weight="400" fill="#A8B0D0">{{MOD_4_1_DESC_1}}</text>
+      <text x="266" y="624" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="14" font-weight="400" fill="#A8B0D0">{{MOD_4_1_DESC_2}}</text>
+    </g>
+    <g id="mod-4-2">
+      <rect x="578" y="536" width="320" height="120" rx="14" fill="url(#moduleGlass)" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="1"/>
+      <rect x="596" y="537" width="284" height="1" fill="url(#glassEdge)"/>
+      <text x="598" y="574" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="18" font-weight="800" fill="#E8ECFF">{{MOD_4_2_TITLE}}</text>
+      <text x="598" y="602" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="14" font-weight="400" fill="#A8B0D0">{{MOD_4_2_DESC_1}}</text>
+      <text x="598" y="624" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="14" font-weight="400" fill="#A8B0D0">{{MOD_4_2_DESC_2}}</text>
+    </g>
+    <g id="mod-4-3">
+      <rect x="910" y="536" width="310" height="120" rx="14" fill="url(#moduleGlass)" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="1"/>
+      <rect x="928" y="537" width="274" height="1" fill="url(#glassEdge)"/>
+      <text x="930" y="574" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="18" font-weight="800" fill="#E8ECFF">{{MOD_4_3_TITLE}}</text>
+      <text x="930" y="602" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="14" font-weight="400" fill="#A8B0D0">{{MOD_4_3_DESC_1}}</text>
+      <text x="930" y="624" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="14" font-weight="400" fill="#A8B0D0">{{MOD_4_3_DESC_2}}</text>
+    </g>
+  </g>
+
+  <g id="footer">
+    <text x="60" y="694" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="13" font-weight="600" fill="#6B7299">{{SECTION_NAME}}</text>
+    <text x="1220" y="694" font-family="&quot;Microsoft YaHei&quot;, &quot;PingFang SC&quot;, sans-serif" font-size="13" font-weight="600" fill="#6B7299" text-anchor="end">{{PAGE_NUM}}</text>
+  </g>
+</svg>
